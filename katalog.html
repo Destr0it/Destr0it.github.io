@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+	<title>likeBeer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/humburger.js"></script>
+	<script src="js/autorization.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="fullWrapper">
+		<header>
+			<div class="header fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-info">
+				<a href="index.html"><img src="img/logo.png" class="logo" alt="logo like beer"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<!--     <span class="navbar-toggler-icon"></span> -->
+		    <div class="hamburger"></div>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Головна<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="katalog.html">Каталог</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Виробники</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Контакти</a>
+		      </li>
+		    </ul>  
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-success my-2 my-sm-0" type="submit">Пошук</button>
+		    </form>
+		    <div class="autorization">
+		    	<i class="user fas fa-user-circle"></i>
+		    	<div class="contactForm">
+		    	<form action="#" method="POST">
+		    		<fieldset>
+						<legend>Контактна інформація</legend>
+						<div class="form-group">
+							<label for="username">І'мя:</label>
+							<input  class="form-control" type="text" name="username" placeholder="Введіть і'мя">
+						</div>
+						<div class="form-group">
+							<label for="password">Password:</label>
+							<input  class="form-control" type="password" name="password">
+						</div>
+					</fieldset>
+		    		<input class="btn btn-success w-100 mt-2" type="submit" value="Sign in">
+		    	</form>
+		    	</div>
+		    </div>
+		  </div>
+		</nav>
+		</div>
+		</header>
+		<div class="wrap">
+			<aside>
+				<div class="sidebar">
+				<div class="pos-f-t">
+				  <nav class="navbar navbar-dark text-light bg-dark ">		    
+					<span class="text-uppercase font-weight-bold">Фільтри</span>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				  </nav>
+				  <div class="collapse" id="navbarToggleExternalContent">
+				    <div class="text-light bg-dark p-4">
+					<form action="#" method="GET">
+						<div class="form-group"	>
+							<label for="Select1">Сорт:</label>
+							<select class="form-control" id="Select1">
+								<option>lager</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label  for="Select2">Колір:</label>
+							<select class="form-control" id="Select2">
+								<option>світле</option>
+								<option>темне</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Фільтрація:</label>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="filter">
+								<label class="form-check-label" for="filter">фільтроване</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="filter">
+								<label class="form-check-label" for="filter">нефільтроване</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Пастеризація:</label>
+							<div class="form-check">
+								<input class="form-check-input"  type="radio" name="paster">	
+								<label class="form-check-label" for="paster">пастеризоване</label>
+							</div>
+							<div class="form-check">	
+								<input class="form-check-input"  type="radio" name="paster">
+								<label class="form-check-label" for="paster">непастеризоване</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+				    </div>
+				  </div>  
+				</div>	
+			</aside>
+			<main>
+				<div class="main">
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href="pagebeer.html"><img class="w-100" src="img/beer/kalusher.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="pagebeer.html">Пиво Kalusher</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherDARK.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher DARK</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherGOLD.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher GOLD</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherLager.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher LAGER</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/kalusher.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherDARK.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher DARK</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherGOLD.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher GOLD</a></h3>
+						</div>
+					</article>
+					<article>
+						<div class="post border border-secondary rounded">
+							<a href=""><img class="w-100" src="img/beer/KalusherLager.jpg"></a>
+							<h3 class="text-center mt-2"><a class="btn btn-primary w-100" href="">Пиво Kalusher LAGER</a></h3>
+						</div>
+					</article>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="social">
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-vk"></i></a>
+					<a href="#"><i class="fab fa-odnoklassniki-square"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>		
+					<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+				</div>	
+				<span class="copyrait"><a href="index.html">LikeBeer 2018</a></span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

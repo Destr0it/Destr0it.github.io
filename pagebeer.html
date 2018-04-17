@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk-ua">
+<head>
+	<title>likeBeer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/humburger.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/autorization.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="fullWrapper pageBeer">
+		<header>
+			<div class="header fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-info">
+				<a href="index.html"><img src="img/logo.png" class="logo" alt="logo like beer"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<!--     <span class="navbar-toggler-icon"></span> -->
+		    <div class="hamburger"></div>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Головна<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="katalog.html">Каталог</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Виробники</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Контакти</a>
+		      </li>
+		    </ul>  
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-success my-2 my-sm-0" type="submit">Пошук</button>
+		    </form>
+		    <div class="autorization">
+		    	<i class="user fas fa-user-circle"></i>
+		    	<div class="contactForm">
+		    	<form action="#" method="POST">
+		    		<fieldset>
+						<legend>Контактна інформація</legend>
+						<div class="form-group">
+							<label for="username">І'мя:</label>
+							<input  class="form-control" type="text" name="username" placeholder="Введіть і'мя">
+						</div>
+						<div class="form-group">
+							<label for="pass">Password:</label>
+							<input  class="form-control" type="password" name="pass">
+						</div>
+					</fieldset>
+		    		<input class="btn btn-success w-100 mt-2" type="submit" value="Sign in">
+		    	</form>
+		    	</div>
+		    </div>
+		  </div>
+		</nav>
+		</div>
+		</header>
+		<div class="wrap">
+			<main>
+				<div class="main">
+					<article>
+						<div class="infoBeer rounded">
+							<div class="leftInf">
+								<div class="imgBeer"></div>
+								<div class="bal">
+									<div class="container">
+									  <div class="inner">
+									    <div class="rating">
+									      <span class="rating-num">4.0</span>
+									      <div class="rating-stars">
+									        <span><i class="active fas fa-star"></i></span>
+									        <span><i class="active fas fa-star"></i></span>
+									        <span><i class="active fas fa-star"></i></span>
+									        <span><i class="active fas fa-star"></i></span>
+									        <span><i class="fas fa-star"></i></span>
+									      </div>
+									      <div class="rating-users">
+									        <i class="icon-user"></i> 1,014,004 total
+									      </div>
+									    </div>
+									    
+									    <div class="histo">
+									      <div class="five histo-rate">
+									        <span class="histo-star">
+									          <i class="active icon-star"></i> 5           </span>
+									        <span class="bar-block">
+									          <span id="bar-five" class="bar">
+									            <span>566,784</span>&nbsp;
+									          </span> 
+									        </span>
+									      </div>
+									      
+									      <div class="four histo-rate">
+									        <span class="histo-star">
+									          <i class="active icon-star"></i> 4           </span>
+									        <span class="bar-block">
+									          <span id="bar-four" class="bar">
+									            <span>171,298</span>&nbsp;
+									          </span> 
+									        </span>
+									      </div> 
+									      
+									      <div class="three histo-rate">
+									        <span class="histo-star">
+									          <i class="active icon-star"></i> 3           </span>
+									        <span class="bar-block">
+									          <span id="bar-three" class="bar">
+									            <span>94,940</span>&nbsp;
+									          </span> 
+									        </span>
+									      </div>
+									      
+									      <div class="two histo-rate">
+									        <span class="histo-star">
+									          <i class="active icon-star"></i> 2           </span>
+									        <span class="bar-block">
+									          <span id="bar-two" class="bar">
+									            <span>44,525</span>&nbsp;
+									          </span> 
+									        </span>
+									      </div>
+									      
+									      <div class="one histo-rate">
+									        <span class="histo-star">
+									          <i class="active icon-star"></i> 1           </span>
+									        <span class="bar-block">
+									          <span id="bar-one" class="bar">
+									            <span>136,457</span>&nbsp;
+									          </span> 
+									        </span>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<div class="infa">
+								<h3>Пиво Kalusher</h3>
+								<p>
+									Kalusher – світлий класичний лагер виробництва Калуського пивного заводу. Має м’який хмелевий смак та чудово втамовує спрагу. Цей продукт добре смакує з соленою соломкою та арахісом. Витримане у підвалах заводу від 21 доби.
+								</p>
+								<h4>Характеристики Kalusher:</h4>
+								<div><span id="sort" class="font-weight-bold">Сорт:   </span><span>lager</span></div>
+								<div><span id="color" class="font-weight-bold">Колір:   </span><span>світле</span></div>
+								<div><span id="filter" class="font-weight-bold">Фільтрація:   </span><span>фільтроване</span></div>
+								<div><span id="paster" class="font-weight-bold">Пастеризація:   </span><span>пастеризоване</span></div>
+								<div><span id="shchil" class="font-weight-bold">Щільність:   </span><span>11.0%</span></div>
+								<div><span id="vmist" class="font-weight-bold">Вміст алкоголю:   </span><span>3.5%</span></div>
+								<div><span id="kal" class="font-weight-bold">Калорійність:   </span><span>42 ккал на 100 грамів продукту</span></div>
+								<div><span id="sclad" class="font-weight-bold">Склад:   </span><span>вода, солод пивоварний ячмінний, хміль, ячмінь пивоварний, цукор.</span></div>
+								<br><p>Рекомендовано вживати охолодженим. Термін придатності: 60 діб в сухому затемненому місці.</p>
+							</div>
+						</div>
+						<div class="commentForm clearfix">
+							<div class="container">
+								<form action="#" method="">
+									<div  class="form-group clearfix">
+										<textarea  class="form-control" placeholder="Впишіть свій коментар..." ></textarea>
+										<input type="submit" class="btn btn-primary ">
+									</div>
+								</form>
+								<div class="section-comments">
+								  <div class="section-comments__comments">
+								    <h6 class="comments__title">Coments (45)</h6>
+								    <ul class="comments__list-comment">
+								      <li class="list-comment__comment">
+								        <div class="comment__avatar">
+								          <div class="avatar__border"><img class="avatar__author" src="http://pixel.brit.co/wp-content/uploads/2015/09/man-braid-3.jpg" alt=""/></div>
+								        </div>
+								        <div class="comment__comment-text">
+								          <h5 class="comment-text__name-author">juardecabare<span class="name-author__data-post">3 hourse ago</span></h5>
+								          <p class="comment-text__content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								        </div>
+								      </li>
+								      <li class="list-comment__comment">
+								        <div class="comment__avatar">
+								          <div class="avatar__border"><img class="avatar__author" src="https://pbs.twimg.com/profile_images/524648404551344128/yM4FpVbv.jpeg" alt=""/></div>
+								        </div>
+								        <div class="comment__comment-text">
+								          <h5 class="comment-text__name-author">georgheruc<span class="name-author__data-post"> 2 hours ago</span></h5>
+								          <p class="comment-text__content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates explicabo enim amet.</p>
+								        </div>
+								      </li>
+								      <li class="list-comment__comment">
+								        <div class="comment__avatar">
+								          <div class="avatar__border"><img class="avatar__author" src="https://pbs.twimg.com/profile_images/524648404551344128/yM4FpVbv.jpeg" alt=""/></div>
+								        </div>
+								        <div class="comment__comment-text">
+								          <h5 class="comment-text__name-author">georgheruc<span class="name-author__data-post"> 4 hours ago</span></h5>
+								          <p class="comment-text__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								        </div>
+								      </li>
+								    </ul>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="social">
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-vk"></i></a>
+					<a href="#"><i class="fab fa-odnoklassniki-square"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>		
+					<a href="#"><i class="fab fa-google-plus-square"></i></a>
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+				</div>	
+				<span class="copyrait"><a href="index.html">LikeBeer 2018</a></span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

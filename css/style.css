@@ -1,0 +1,461 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+  font-weight: 300;
+}
+.fullWrapper{
+	/*padding: 10px;*/
+}
+.logo{
+	width: 70%;
+}
+
+/*--------------------------------*/
+  .user{
+    display: none!important;
+  }
+  .contactForm{
+    padding: 5px;
+  }
+/*--------------------------------*/
+/*--------------------------------*/
+.navbar-toggler {
+  position: relative;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.hamburger {
+  width: 50px;
+  height: 5px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background: #000;
+    transition: .5s;
+}
+.hamburger:before {
+    top: -16px;
+}
+.hamburger:after {
+    top: 16px;
+}
+.navbar-toggler.navbar-active .hamburger {
+    background: transparent;
+}
+.navbar-toggler.navbar-active .hamburger:before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+.navbar-toggler.navbar-active .hamburger:after {
+      top: 0;
+      transform: rotate(135deg);
+}
+/*--------------------------------*/
+.wrap{
+	margin-top: 37%;
+	padding: 10px;
+	/*background-color: silver;*/
+}
+.sidebar{
+  width: 100%;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=fff');
+}
+.main{
+	width: 100%;
+}
+h2{
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  /*background-color: #fff;*/
+}
+ .imgBeer{
+    background-image: url(../img/beer/kalusher.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+  }
+/*----------------------------------------------*/
+.bal .container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 4px;
+}
+
+.inner {
+  padding: 10px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+}
+
+.rating {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.rating-num {
+  color: #333333;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 1em; 
+}
+
+.rating-stars{
+  font-size: 16px;
+  color: #E3E3E3;
+  margin-bottom: .5em;
+}
+.rating-stars .active {
+  color: #737373;
+}
+
+.rating-users {
+  font-size: 14px;
+}
+
+.histo {
+  float: left;
+  width: 50%;
+  font-size: 13px;
+}
+
+.histo-star {
+  float: left;
+  padding: 3px;
+
+}
+
+.histo-rate {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.bar-block {
+  margin-left: 5px;
+  color: black;
+  display: block;
+  float: left;
+  width: 75%;
+  position: relative;
+}
+
+.bar {
+  padding: 4px;
+  display: block;
+}
+
+#bar-five {
+  width: 0;
+  background-color: #9FC05A;
+}
+
+#bar-four {
+  width: 0;
+  background-color: #ADD633;
+}
+
+#bar-three {
+  width: 0;
+  background-color: #FFD834;
+}
+
+#bar-two {
+  width: 0;
+  background-color: #FFB234;
+}
+
+#bar-one {
+  width: 0;
+  background-color: #FF8B5A;
+}
+
+/*----------------------------------------------*/
+  .infa{
+    width: 100%;
+  }
+/* ----- Section Coments ----- */
+.commentForm .container{padding: 0;}
+.commentForm .btn{
+  margin: 10px 0;
+  float: right;
+}
+.section-comments {
+  margin: 0 auto;
+  width: 100%;
+  /*padding: 30px;*/
+}
+
+/* ----- Coments ----- */
+.comments__title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ----- Comment ----- */
+.list-comment__comment {
+  width: 100%;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+.list-comment__comment::after, .list-comment__comment::before {
+  display: table;
+  content: "";
+}
+.list-comment__comment::after {
+  clear: both;
+}
+
+.comment__avatar {
+  width: 50px;
+  float: left;
+  clear: both;
+}
+
+.avatar__border {
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.avatar__author {
+  width: 50px;
+}
+
+/* ----- Comment text ----- */
+.comment__comment-text {
+  width: 80%;
+  display: block;
+  float: right;
+}
+
+.comment-text__name-author {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.name-author__data-post {
+  font-weight: 400;
+  font-size: 12px;
+  color: gray;
+}
+.name-author__data-post::before {
+  content: " · ";
+  font-weight: 900;
+}
+
+.comment-text__content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*----------------------------*/
+.post{
+	margin:10px 0;
+	padding: 5px; 
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #17a2b8;*/
+}
+.copyrait a{
+  color: #111;
+  text-decoration: none;
+}
+.fab{
+    margin: 10px 5px;
+    font-size: 24px;
+    color: #111;
+}
+.fa-facebook-square:hover{
+  color: #004d99;
+}
+.fa-vk:hover{
+  color: #4da6ff;
+}
+.fa-odnoklassniki-square:hover{
+  color: orange;
+}
+.fa-instagram:hover{
+  color: red;
+}
+.fa-google-plus-square:hover{
+  color: silver;
+}
+.fa-twitter-square:hover{
+  color: #4da6ff;
+}
+
+@media (min-width: 321px) and (max-width: 1223px){
+	.logo{
+		max-width: 200px;
+	}
+	.wrap{
+		margin-top: 120px;
+	}
+}
+@media (min-width: 1224px){
+  body{
+    background-image: url(../img/beer_fullhd_bg.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .fullWrapper{  
+    /*width: 960px;*/
+    width: 70%;
+    margin: 0 0 0 28%;
+  }
+  .pageBeer{
+    /*width: 80%;*/
+    /*margin: 0 auto;*/
+  }
+  .logo{
+    max-width: 100px;
+  }
+  .user{
+    display: block!important;
+    font-size: 40px;
+    margin: 0 20px;
+  }
+  .autorization{
+    position: relative;
+  }
+  .contactForm-active{
+    display: block!important;
+  }
+  .contactForm:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 10px;
+    /*background-color: #fff;*/
+    top: -10px;
+    right: 0;
+
+  }
+  .contactForm{
+    display: none;
+    width: 300px;
+    padding: 20px 40px;
+    position: absolute;
+    background-color: #17a2b8;
+    border:1px solid #111;
+    box-shadow: 0 0 5px #111,
+                inset 0 0 0 10px #fff;
+                
+    top: 50px;
+    right: 0;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  .sidebar{
+    width: 200px;
+    opacity: 0.8;
+  }
+  .main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*width: 750px;*/
+    width: 102%;
+    padding: 0 10px;  
+  } 
+  .main:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .infoBeer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+  }
+  .leftInf{width: 30%;}
+  .imgBeer{
+    background-image: url(../img/beer/kalusher.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+    height: 480px;
+  }
+  .infa{
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .commentForm{
+    /*overflow: auto;*/
+  }
+  .section-comments {
+    padding: 30px;
+  }
+  .commentForm .container{
+    float: right;
+    width: 70%;
+  }
+
+  .post{
+    width: 220px;
+    /*width: 40%;*/
+    margin: 5px;
+    background-color: #fff;
+  }
+  .collapse{
+    display: block;
+  }
+}
